@@ -52,7 +52,7 @@ pipeline:
     pull: true
     commands:
       - profzone deploy --env STAGING
-      - profzone deploy --env TEST
-      - profzone deploy --env DEMO
+#      - profzone deploy --env TEST
+#      - profzone deploy --env DEMO
     when:
       branch: [ master ]

@@ -1,0 +1,10 @@
+name: service-id
+group: profzone
+version: 0.0.0
+description: 分布式唯一ID生成服务
+program_language: golang
+scripts:
+  build: go build -v -o service-id && tools swagger
+  test: go test
+workflow:
+  extends: feature-pr

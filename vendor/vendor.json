@@ -1,0 +1,251 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "VsE3zx2d8kpwj97TWhYddzAwBrY=",
+			"origin": "profzone/libtools/vendor/github.com/fatih/color",
+			"path": "github.com/fatih/color",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "uFNLkTxk8BkHTk0Jcub2lj2BX4M=",
+			"origin": "profzone/libtools/vendor/github.com/google/uuid",
+			"path": "github.com/google/uuid",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "mB5P3/XIC7r4Jc0/K86NA9Jq2CA=",
+			"origin": "profzone/libtools/vendor/github.com/gorilla/websocket",
+			"path": "github.com/gorilla/websocket",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "40vJyUB4ezQSn/NSadsKEOrudMc=",
+			"origin": "profzone/libtools/vendor/github.com/inconshreveable/mousetrap",
+			"path": "github.com/inconshreveable/mousetrap",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "X7g98YfLr+zM7aN76AZvAfpZyfk=",
+			"origin": "profzone/libtools/vendor/github.com/julienschmidt/httprouter",
+			"path": "github.com/julienschmidt/httprouter",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "XEV3BI3nHA/rNa/tIgB7fVCrDww=",
+			"origin": "profzone/libtools/vendor/github.com/mattn/go-colorable",
+			"path": "github.com/mattn/go-colorable",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "w5RcOnfv5YDr3j2bd1YydkPiZx4=",
+			"origin": "profzone/libtools/vendor/github.com/mattn/go-isatty",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "/fQ4EaCLlXEDtwi9FTkAyuTjgVM=",
+			"origin": "profzone/libtools/vendor/github.com/sirupsen/logrus",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "/7nJGKk93PHyCjnqXOtTNy2K4SM=",
+			"origin": "profzone/libtools/vendor/github.com/spf13/cobra",
+			"path": "github.com/spf13/cobra",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "k5TsfhX2vvfffYbZQ4fMKtL5+cA=",
+			"origin": "profzone/libtools/vendor/github.com/spf13/pflag",
+			"path": "github.com/spf13/pflag",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "BGm8lKZmvJbf/YOJLeL1rw2WVjA=",
+			"origin": "profzone/libtools/vendor/golang.org/x/crypto/ssh/terminal",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "GGKf0PhH10T74AZlxSWl6zrqPrU=",
+			"origin": "profzone/libtools/vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "Dfz4tGItokMvHZENCsBmPPB8FGQ=",
+			"origin": "profzone/libtools/vendor/golang.org/x/sys/windows",
+			"path": "golang.org/x/sys/windows",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "TM3Neoy1xRAKyZYMGzKc41sDFW4=",
+			"origin": "profzone/libtools/vendor/gopkg.in/natefinch/lumberjack.v2",
+			"path": "gopkg.in/natefinch/lumberjack.v2",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "CzLpoHWYgSP+mT3bcW/jt8epp5I=",
+			"origin": "profzone/libtools/vendor/gopkg.in/robfig/cron.v2",
+			"path": "gopkg.in/robfig/cron.v2",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
+			"origin": "profzone/libtools/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "mMyLM0lMkN8yL5uWepaL55Prk1U=",
+			"path": "profzone/libtools/conf",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "uTNe4CPK5ZTpFIVmM8EgGx1GRhc=",
+			"path": "profzone/libtools/courier",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "a7R/FE/WO7QhhjIKEjRifCpkaRI=",
+			"path": "profzone/libtools/courier/httpx",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "ESC1smZ65E1KgQqEmkZ0QDnIor8=",
+			"path": "profzone/libtools/courier/status_error",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "H9/wxcxE3AGClB3tdbUzJQ3+AZQ=",
+			"path": "profzone/libtools/courier/swagger",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "p69I3nxPLohQd8jqhwsB7s4/KtY=",
+			"path": "profzone/libtools/courier/transport_http",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "zFmMU+N1SucgI7MKMhY/oZi3O90=",
+			"path": "profzone/libtools/courier/transport_http/transform",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "Tp1AXLPCsGC1tRVVApmPwCaq8Xk=",
+			"path": "profzone/libtools/docker",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "bA8TjRyRTnHH6ZKp+34IXlFLniw=",
+			"path": "profzone/libtools/duration",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "FAPL4G1Km0y71TsDICG/K1daeEk=",
+			"path": "profzone/libtools/env",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "z2DyvrCwzLqx6Ka6Sr00R+Y+kOg=",
+			"path": "profzone/libtools/executil",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "seW4p7bQzvrEpcH8TakBBs7AgvY=",
+			"path": "profzone/libtools/godash",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "gSE86WekHyEFJpT9dw5Js/2fakc=",
+			"path": "profzone/libtools/log",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "grGDbmW6FaNuGX7cYtosu+A6/Y0=",
+			"path": "profzone/libtools/log/context",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "fIkB7QCa4EtBZnwOEZ0fJxc5RKY=",
+			"path": "profzone/libtools/log/hooks",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "WLYUFbL2IfXpjUBVp8KKRaAu1Lc=",
+			"path": "profzone/libtools/ptr",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "T1NQYKoKt++jyHlcdpntHkLcrTU=",
+			"path": "profzone/libtools/reflectx",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "Hqzqasmk6Ny0VUlVRlKMiFDxmwQ=",
+			"path": "profzone/libtools/service/dockerizier",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "5Tut6Yjgk0XhR1eZr/9QT5MHn0Y=",
+			"path": "profzone/libtools/servicex",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "o3J03+HdqMgNDgLIfthPfXZR9As=",
+			"path": "profzone/libtools/strutil",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "XksNoQG5ROqpFXNveRsBtfyarO4=",
+			"path": "profzone/libtools/validate",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		},
+		{
+			"checksumSHA1": "6Ii5DtlhZmRltp30i3wrYw9Qy+E=",
+			"path": "profzone/libtools/validate/validatetpl",
+			"revision": "b1be272f369060277513a8585586d984a8358eba",
+			"revisionTime": "2018-06-02T03:47:50Z"
+		}
+	],
+	"rootPath": "profzone/service-id"
+}

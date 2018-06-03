@@ -1,0 +1,20 @@
+version: "2"
+services:
+  service-id:
+    image: ${PROFZONE_DOCKER_REGISTRY}/${PROJECT_GROUP}/${PROJECT_NAME}:${PROJECT_VERSION}
+    labels:
+      base_path: /id
+      io.rancher.container.pull_image: always
+      io.rancher.container.start_once: "true"
+      lb.g7pay.expose80: /id
+      project.description: ${PROJECT_DESCRIPTION}
+      project.group: ${PROJECT_GROUP}
+      project.name: ${PROJECT_NAME}
+      project.version: ${PROJECT_VERSION}
+    environment:
+      GOENV: ${GOENV}
+      S_LOG_LEVEL: ${S_LOG_LEVEL}
+    dns_search:
+    - rancher.internal
+    dns:
+    - 169.254.169.250

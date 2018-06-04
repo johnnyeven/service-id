@@ -19,7 +19,7 @@ func (req GetNewId) Path() string {
 }
 
 type GetNewIdResponse struct {
-	ID uint64 `json:"id"`
+	ID uint64 `json:"id,string"`
 }
 
 func (req GetNewId) Output(ctx context.Context) (result interface{}, err error) {

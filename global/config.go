@@ -4,6 +4,7 @@ import (
 	"profzone/libtools/courier/transport_http"
 	"profzone/libtools/log"
 	"profzone/libtools/servicex"
+	"profzone/service-id/constants/types"
 )
 
 func init() {
@@ -12,9 +13,17 @@ func init() {
 
 }
 
+type SnowFlakeConfig struct {
+	Epoch    int64 `conf:"env"`
+	NodeBits uint8 `conf:"env"`
+	StepBits uint8 `conf:"env"`
+}
+
 var Config = struct {
-	Log    *log.Log
-	Server transport_http.ServeHTTP
+	Log               *log.Log
+	Server            transport_http.ServeHTTP
+	GenerateAlgorithm types.GenerateAlgorithm `conf:"env"`
+	SnowFlakeConfig   SnowFlakeConfig
 }{
 	Log: &log.Log{
 		Level: "DEBUG",
@@ -22,5 +31,11 @@ var Config = struct {
 	Server: transport_http.ServeHTTP{
 		WithCORS: true,
 		Port:     8000,
+	},
+	GenerateAlgorithm: types.GENERATE_ALGORITHM__SNOWFLAKE,
+	SnowFlakeConfig: SnowFlakeConfig{
+		Epoch:    1288834974657,
+		NodeBits: 10,
+		StepBits: 12,
 	},
 }

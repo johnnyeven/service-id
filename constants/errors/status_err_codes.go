@@ -6,7 +6,7 @@ import (
 	"profzone/libtools/courier/status_error"
 )
 
-//go:generate tools gen error
+//go:generate libtools gen error
 const ServiceStatusErrorCode = 0 * 1e3 // todo rename this
 
 const (
@@ -17,6 +17,8 @@ const (
 const (
 	// 未找到
 	NotFound status_error.StatusErrorCode = http.StatusNotFound*1e6 + ServiceStatusErrorCode + iota
+	// ID生成器未找到
+	AlgorithmNotFound
 )
 
 const (
@@ -32,6 +34,8 @@ const (
 const (
 	// @errTalk 不允许操作
 	Forbidden status_error.StatusErrorCode = http.StatusForbidden*1e6 + ServiceStatusErrorCode + iota
+	// Node节点数已达上限
+	NodeCountExceedLimit
 )
 
 const (

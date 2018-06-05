@@ -37,4 +37,3 @@ func (req GetNewId) Output(ctx context.Context) (result interface{}, err error) 
 		ID: resp,
 	}, nil
 }
-

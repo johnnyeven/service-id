@@ -18,7 +18,7 @@ func (req GetNewId) Path() string {
 	return "/id"
 }
 
-type GetNewIdResponse struct {
+type UniqueID struct {
 	ID uint64 `json:"id,string"`
 }
 
@@ -33,7 +33,7 @@ func (req GetNewId) Output(ctx context.Context) (result interface{}, err error) 
 		return nil, err
 	}
 
-	return GetNewIdResponse{
+	return UniqueID{
 		ID: resp,
 	}, nil
 }

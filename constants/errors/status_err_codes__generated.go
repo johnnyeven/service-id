@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"profzone/libtools/courier/status_error"
+	"github.com/profzone/libtools/courier/status_error"
 )
 
 func init() {

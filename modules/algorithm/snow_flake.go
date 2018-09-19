@@ -1,11 +1,11 @@
 package algorithm
 
 import (
-	"profzone/service-id/constants/types"
-	"profzone/service-id/global"
+	"github.com/profzone/service-id/constants/types"
+	"github.com/profzone/service-id/global"
 	"strconv"
 	"sync"
-	"profzone/service-id/constants/errors"
+	"github.com/profzone/service-id/constants/errors"
 	"time"
 )
 

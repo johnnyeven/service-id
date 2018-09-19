@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"profzone/libtools/courier"
-	"profzone/libtools/courier/swagger"
+	"github.com/profzone/libtools/courier"
+	"github.com/profzone/libtools/courier/swagger"
 )
 
 var RootRouter = courier.NewRouter(GroupRoot{})

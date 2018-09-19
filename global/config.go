@@ -1,10 +1,10 @@
 package global
 
 import (
-	"profzone/libtools/courier/transport_http"
-	"profzone/libtools/log"
-	"profzone/libtools/servicex"
-	"profzone/service-id/constants/types"
+	"github.com/profzone/libtools/courier/transport_http"
+	"github.com/profzone/libtools/log"
+	"github.com/profzone/libtools/servicex"
+	"github.com/profzone/service-id/constants/types"
 )
 
 func init() {

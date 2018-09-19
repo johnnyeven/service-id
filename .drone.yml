@@ -7,8 +7,8 @@ pipeline:
     image: registry.profzone.net:5000/profzone/golang:onbuild
     pull: true
     commands:
-      - cp -r /drone/workspace/service-id /go/src/profzone/service-id
-      - cd /go/src/profzone/service-id
+      - cp -r /drone/workspace/service-id /go/src/github.com/profzone/service-id
+      - cd /go/src/github.com/profzone/service-id
       - go test
       - go build -v -o service-id
       - libtools swagger

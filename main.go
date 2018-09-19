@@ -1,9 +1,9 @@
 package main
 
 import (
-	"profzone/libtools/servicex"
-	"profzone/service-id/global"
-	"profzone/service-id/routes"
+	"github.com/profzone/libtools/servicex"
+	"github.com/profzone/service-id/global"
+	"github.com/profzone/service-id/routes"
 )
 
 func main() {

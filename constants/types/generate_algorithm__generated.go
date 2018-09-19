@@ -5,7 +5,7 @@ import (
 	"encoding"
 	"errors"
 
-	profzone_libtools_courier_enumeration "profzone/libtools/courier/enumeration"
+	profzone_libtools_courier_enumeration "github.com/profzone/libtools/courier/enumeration"
 )
 
 var InvalidGenerateAlgorithm = errors.New("invalid GenerateAlgorithm")

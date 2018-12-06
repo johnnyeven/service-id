@@ -1,11 +1,11 @@
 package routes
 
 import (
-	"github.com/profzone/libtools/courier/httpx"
+	"github.com/johnnyeven/libtools/courier/httpx"
 	"context"
-	"github.com/profzone/service-id/modules/algorithm"
-	"github.com/profzone/service-id/global"
-	"github.com/profzone/service-id/constants/errors"
+	"github.com/johnnyeven/service-id/modules/algorithm"
+	"github.com/johnnyeven/service-id/global"
+	"github.com/johnnyeven/service-id/constants/errors"
 	"github.com/sirupsen/logrus"
 )
 

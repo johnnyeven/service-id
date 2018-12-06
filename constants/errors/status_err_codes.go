@@ -3,7 +3,7 @@ package errors
 import (
 	"net/http"
 
-	"github.com/profzone/libtools/courier/status_error"
+	"github.com/johnnyeven/libtools/courier/status_error"
 )
 
 //go:generate libtools gen error

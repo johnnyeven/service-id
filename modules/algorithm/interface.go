@@ -1,6 +1,6 @@
 package algorithm
 
-import "github.com/profzone/service-id/constants/types"
+import "github.com/johnnyeven/service-id/constants/types"
 
 type GeneratorAlgorithm interface {
 	GetAlgorithmID() types.GenerateAlgorithm

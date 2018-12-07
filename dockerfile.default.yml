@@ -8,6 +8,7 @@ env:
   S_SERVER_WITHCORS: "false"
 add:
   ./config: ./config
+  ./profzone.yml: ./
   ./service-id: ./
   ./swagger.json: ./
 expose:

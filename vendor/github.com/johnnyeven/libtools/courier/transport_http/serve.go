@@ -16,6 +16,7 @@ import (
 
 	"github.com/johnnyeven/libtools/conf"
 	"github.com/johnnyeven/libtools/courier"
+	"os/signal"
 )
 
 type ServeHTTP struct {
@@ -72,14 +73,14 @@ func (s *ServeHTTP) Serve(router *courier.Router) error {
 		ReadTimeout:  s.ReadTimeout,
 	}
 
-	//go func() {
-	//	sigint := make(chan os.Signal, 1)
-	//	signal.Notify(sigint, os.Interrupt)
-	//	<-sigint
-	//	if err := s.serv.Shutdown(context.Background()); err != nil {
-	//		fmt.Printf("HTTP server Shutdown: %v", err)
-	//	}
-	//}()
+	go func() {
+		sigint := make(chan os.Signal, 1)
+		signal.Notify(sigint, os.Interrupt)
+		<-sigint
+		if err := s.Stop(); err != nil {
+			fmt.Printf("HTTP server Shutdown: %v", err)
+		}
+	}()
 
 	fmt.Printf("[Courier] listen on %s\n", s.serv.Addr)
 	return s.serv.ListenAndServe()

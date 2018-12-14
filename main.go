@@ -8,5 +8,6 @@ import (
 
 func main() {
 	servicex.Execute()
-	global.Config.Server.Serve(routes.RootRouter)
+	go global.Config.ServerGRPC.Serve(routes.RootRouter)
+	global.Config.ServerHTTP.Serve(routes.RootRouter)
 }

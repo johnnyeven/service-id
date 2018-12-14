@@ -5,6 +5,7 @@ import (
 	"github.com/johnnyeven/libtools/log"
 	"github.com/johnnyeven/libtools/servicex"
 	"github.com/johnnyeven/service-id/constants/types"
+	"github.com/johnnyeven/libtools/courier/transport_grpc"
 )
 
 func init() {
@@ -21,16 +22,20 @@ type SnowFlakeConfig struct {
 
 var Config = struct {
 	Log               *log.Log
-	Server            transport_http.ServeHTTP
+	ServerHTTP        transport_http.ServeHTTP
+	ServerGRPC        transport_grpc.ServeGRPC
 	GenerateAlgorithm types.GenerateAlgorithm `conf:"env"`
 	SnowFlakeConfig   SnowFlakeConfig
 }{
 	Log: &log.Log{
 		Level: "DEBUG",
 	},
-	Server: transport_http.ServeHTTP{
+	ServerHTTP: transport_http.ServeHTTP{
 		WithCORS: true,
 		Port:     8000,
+	},
+	ServerGRPC: transport_grpc.ServeGRPC{
+		Port: 9990,
 	},
 	GenerateAlgorithm: types.GENERATE_ALGORITHM__SNOWFLAKE,
 	SnowFlakeConfig: SnowFlakeConfig{

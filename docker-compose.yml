@@ -1,7 +1,5 @@
 version: "2"
 services:
   service-id:
-    image: busybox:latest
-    mem_limit: 1073741824
     environment:
       S_SERVERGRPC_PORT: "9990"

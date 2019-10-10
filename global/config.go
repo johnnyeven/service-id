@@ -32,10 +32,10 @@ var Config = struct {
 	},
 	ServerHTTP: transport_http.ServeHTTP{
 		WithCORS: true,
-		Port:     8000,
+		Port:     8001,
 	},
 	ServerGRPC: transport_grpc.ServeGRPC{
-		Port: 9990,
+		Port: 9991,
 	},
 	GenerateAlgorithm: types.GENERATE_ALGORITHM__SNOWFLAKE,
 	SnowFlakeConfig: SnowFlakeConfig{

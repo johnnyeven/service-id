@@ -171,10 +171,10 @@
 			"revisionTime": "2018-12-14T14:16:53Z"
 		},
 		{
-			"checksumSHA1": "fBebhRuISrgMUi12zcZfyZaFRsY=",
+			"checksumSHA1": "23vZuMoXvJmddX2OwGfdluhdWiM=",
 			"path": "github.com/johnnyeven/libtools/courier/transport_http",
-			"revision": "72911263c772edaf962e52d9a01c320ae4d6e65c",
-			"revisionTime": "2018-12-14T14:16:53Z"
+			"revision": "d1bbbdb119c03ac9d111f699fb5f92b416cc045e",
+			"revisionTime": "2019-10-08T08:26:52Z"
 		},
 		{
 			"checksumSHA1": "xQn1X658m6t21kB5WQFVyc8SSVc=",
@@ -219,10 +219,10 @@
 			"revisionTime": "2018-12-14T14:16:53Z"
 		},
 		{
-			"checksumSHA1": "OnBJJd3T+CUi4h+zt6W5HhCtDJs=",
+			"checksumSHA1": "37AbxDBl5O0tdmoGVeUpASCO95o=",
 			"path": "github.com/johnnyeven/libtools/log/context",
-			"revision": "72911263c772edaf962e52d9a01c320ae4d6e65c",
-			"revisionTime": "2018-12-14T14:16:53Z"
+			"revision": "d1bbbdb119c03ac9d111f699fb5f92b416cc045e",
+			"revisionTime": "2019-10-08T08:26:52Z"
 		},
 		{
 			"checksumSHA1": "bijz7Os7bnVH7ITXT/5GJcWyYiY=",

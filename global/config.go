@@ -1,11 +1,11 @@
 package global
 
 import (
+	"github.com/johnnyeven/libtools/courier/transport_grpc"
 	"github.com/johnnyeven/libtools/courier/transport_http"
 	"github.com/johnnyeven/libtools/log"
 	"github.com/johnnyeven/libtools/servicex"
 	"github.com/johnnyeven/service-id/constants/types"
-	"github.com/johnnyeven/libtools/courier/transport_grpc"
 )
 
 func init() {
@@ -16,6 +16,7 @@ func init() {
 
 type SnowFlakeConfig struct {
 	Epoch    int64 `conf:"env"`
+	NodeID   int64 `conf:"env"`
 	NodeBits uint8 `conf:"env"`
 	StepBits uint8 `conf:"env"`
 }
@@ -40,6 +41,7 @@ var Config = struct {
 	GenerateAlgorithm: types.GENERATE_ALGORITHM__SNOWFLAKE,
 	SnowFlakeConfig: SnowFlakeConfig{
 		Epoch:    1288834974657,
+		NodeID:   1,
 		NodeBits: 10,
 		StepBits: 12,
 	},

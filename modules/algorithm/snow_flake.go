@@ -1,11 +1,11 @@
 package algorithm
 
 import (
+	"github.com/johnnyeven/service-id/constants/errors"
 	"github.com/johnnyeven/service-id/constants/types"
 	"github.com/johnnyeven/service-id/global"
 	"strconv"
 	"sync"
-	"github.com/johnnyeven/service-id/constants/errors"
 	"time"
 )
 
@@ -38,6 +38,7 @@ func init() {
 	nodeMax := int64(-1 ^ (-1 << snowFlakeConfig.NodeBits))
 	generator := GeneratorSnowFlake{
 		Epoch:     snowFlakeConfig.Epoch,
+		NodeID:    snowFlakeConfig.NodeID,
 		NodeBits:  snowFlakeConfig.NodeBits,
 		StepBits:  snowFlakeConfig.StepBits,
 		nodeMax:   nodeMax,
@@ -110,6 +111,7 @@ type Node struct {
 func (n *Node) Generate() ID {
 
 	n.mu.Lock()
+	defer n.mu.Unlock()
 
 	now := time.Now().UnixNano() / 1000000
 
@@ -132,11 +134,11 @@ func (n *Node) Generate() ID {
 		(n.step),
 	)
 
-	n.mu.Unlock()
 	return r
 }
 
 type GeneratorSnowFlake struct {
+	NodeID    int64
 	Epoch     int64
 	NodeBits  uint8
 	StepBits  uint8
@@ -148,7 +150,7 @@ type GeneratorSnowFlake struct {
 	nodes     []*Node
 }
 
-func (g *GeneratorSnowFlake) newNode(node int64) (*Node, error) {
+func (g *GeneratorSnowFlake) newNode() (*Node, error) {
 	// re-calc in case custom NodeBits or StepBits were set
 	g.nodeMax = -1 ^ (-1 << g.NodeBits)
 	g.nodeMask = g.nodeMax << g.StepBits
@@ -156,13 +158,13 @@ func (g *GeneratorSnowFlake) newNode(node int64) (*Node, error) {
 	g.timeShift = g.NodeBits + g.StepBits
 	g.nodeShift = g.StepBits
 
-	if node < 0 || node > g.nodeMax {
+	if g.NodeID < 0 || g.NodeID > g.nodeMax {
 		return nil, errors.NodeCountExceedLimit
 	}
 
 	n := &Node{
 		time:      0,
-		node:      node,
+		node:      g.NodeID,
 		step:      0,
 		generator: g,
 	}
@@ -176,14 +178,11 @@ func (*GeneratorSnowFlake) GetAlgorithmID() types.GenerateAlgorithm {
 }
 
 func (g *GeneratorSnowFlake) InitGenerator() error {
-	g.newNode(1)
-	g.newNode(2)
-	g.newNode(3)
-	g.newNode(4)
+	g.newNode()
 	return nil
 }
 
 func (g *GeneratorSnowFlake) GenerateUniqueID() (uint64, error) {
-	id :=  g.nodes[0].Generate()
+	id := g.nodes[0].Generate()
 	return id.Uint64(), nil
 }
